@@ -3,27 +3,9 @@ import QtQuick 2.0
 import "pages"
 import "helper"
 
-/*/////////////////////////////////////
-  NOTE:
-  Additional integration steps are needed to use Felgo Plugins, for example to add and link required libraries for Android and iOS.
-  Please follow the integration steps described in the plugin documentation of your chosen plugins:
-  - Firebase: https://felgo.com/doc/plugin-firebase/
-
-  To open the documentation of a plugin item in Qt Creator, place your cursor on the item in your QML code and press F1.
-  This allows to view the properties, methods and signals of Felgo Plugins directly in Qt Creator.
-
-/////////////////////////////////////*/
-
 App {
-    // You get free licenseKeys from https://felgo.com/licenseKey
-    // With a licenseKey you can:
-    //  * Publish your games & apps for the app stores
-    //  * Remove the Felgo Splash Screen or set a custom one (available with the Pro Licenses)
-    //  * Add plugins to monetize, analyze & improve your apps (available with the Pro Licenses)
-    //licenseKey: "<generate one from https://felgo.com/licenseKey>"
+    licenseKey: "954A0A57D212D807F9DEE2863382F930E8C47314F2CFA204F43AB7550CBB6100B58CB3C5DC6FB96FE5AC8C3D9EC69CB9B49884857D07959A4FB9C3F9C2639DB3F88C4ECD5573B1F7CB00BA91823F2F4C3DC6886507E20389479A456AEA6871A5A5464A03C9E6862E82D6040363097A9CE706A1A8439E03938477291CAE6C9842F3A4840716BECD3B0F8E7FB01A4B28EF48330102F45B7BA58E9ED531BFD3EDFD4D3E7A3F4CB23A6E03EC098ABB99EDAF9C4CF1290D0A9C28D46D70C9B4A5C7E2BE23D0E3B04801FFE3236F7F0B8CB091D58903671B453D482DED63E2C10663EB14007F6976916DE83FDC5C71765DD58FB5EAA88A150E7F3DC9A9D19B36497F75621FD03E1195A0184E520559E94112760B5BF18E83E52AA30DEA38BA91508DD7B0AE67E1279F64A64C4AFF2316DC7A1D242A6F3A6E448071DAC572485BA45EAD"
 
-    // This item contains example code for the chosen Felgo Plugins
-    // It is hidden by default and will overlay the QML items below if shown
     PluginMainItem {
         id: pluginMainItem
         z: 1           // display the plugin example above other items in the QML code below

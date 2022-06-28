@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "478505786453",
+    "project_id": "grocery-list-9e5ed",
+    "storage_bucket": "grocery-list-9e5ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478505786453:android:d0fa78c95f0fa6747008dc",
+        "android_client_info": {
+          "package_name": "com.mikaili.wizardEVAP.GroceryList"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478505786453-7g2tekl7f8paj43p05ulbea8plqb0j1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCachesdNNpJO91cMlys2fpwu0dCeujLF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478505786453-7g2tekl7f8paj43p05ulbea8plqb0j1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

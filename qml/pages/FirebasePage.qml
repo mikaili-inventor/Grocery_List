@@ -93,78 +93,78 @@ ListPage {
             case 2:
                 loginPage.logoutUser()
                 break
-            case 3: {
+            case 3:
                 if(loginPage.authenticated) {
                     db.setValue("teststring", "test")
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
-            }
+
             break
-            case 4: {
+            case 4:
                 if(loginPage.authenticated) {
                     db.setValue("testint", 123)
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
-            case 5: {
+
+            case 5:
                 if(loginPage.authenticated) {
                     db.setValue("testbool", false)
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
-            case 6: {
+
+            case 6:
                 if(loginPage.authenticated) {
                     db.setValue("testfloat", 1.123)
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
-            case 7: {
+
+            case 7:
                 if(loginPage.authenticated) {
                     db.setValue("testbool", null)
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
-            case 8: {
+
+            case 8:
                 if(loginPage.authenticated) {
                     db.getValue("teststring")
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
-            case 9: {
+
+            case 9:
                 if(loginPage.authenticated) {
                     db.getValue("testint")
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
-            case 10: {
+
+            case 10:
                 if(loginPage.authenticated) {
                     db.getValue("testbool")
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
-            case 11: {
+
+            case 11:
                 if(loginPage.authenticated) {
                     db.getValue("testfloat")
                 } else {
                     console.log("NOT AUTHENTICATED, LOG IN FIRST!")
                 }
                 break
-            }
+
             default:
                 break
             }

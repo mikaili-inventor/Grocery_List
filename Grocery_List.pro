@@ -1,43 +1,23 @@
 # allows to add DEPLOYMENTFOLDERS and links to the Felgo library and QtCreator auto-completion
 CONFIG += felgo
 
-# uncomment this line to add the Live Client Module and use live reloading with your custom C++ code
-# for the remaining steps to build a custom Live Code Reload app see here: https://felgo.com/custom-code-reload-app/
 # CONFIG += felgo-live
 
 # Project identifier and version
-# More information: https://felgo.com/doc/felgo-publishing/#project-configuration
 PRODUCT_IDENTIFIER = com.mikaili.wizardEVAP.GroceryList
 PRODUCT_VERSION_NAME = 1.0.0
 PRODUCT_VERSION_CODE = 1
 
-# Optionally set a license key that is used instead of the license key from
-# main.qml file (App::licenseKey for your app or GameWindow::licenseKey for your game)
-# Only used for local builds and Felgo Cloud Builds (https://felgo.com/cloud-builds)
-# Not used if using Felgo Live
-PRODUCT_LICENSE_KEY = ""
+PRODUCT_LICENSE_KEY = "954A0A57D212D807F9DEE2863382F930E8C47314F2CFA204F43AB7550CBB6100B58CB3C5DC6FB96FE5AC8C3D9EC69CB9B49884857D07959A4FB9C3F9C2639DB3F88C4ECD5573B1F7CB00BA91823F2F4C3DC6886507E20389479A456AEA6871A5A5464A03C9E6862E82D6040363097A9CE706A1A8439E03938477291CAE6C9842F3A4840716BECD3B0F8E7FB01A4B28EF48330102F45B7BA58E9ED531BFD3EDFD4D3E7A3F4CB23A6E03EC098ABB99EDAF9C4CF1290D0A9C28D46D70C9B4A5C7E2BE23D0E3B04801FFE3236F7F0B8CB091D58903671B453D482DED63E2C10663EB14007F6976916DE83FDC5C71765DD58FB5EAA88A150E7F3DC9A9D19B36497F75621FD03E1195A0184E520559E94112760B5BF18E83E52AA30DEA38BA91508DD7B0AE67E1279F64A64C4AFF2316DC7A1D242A6F3A6E448071DAC572485BA45EAD"
 
 qmlFolder.source = qml
-DEPLOYMENTFOLDERS += qmlFolder # comment for publishing
+DEPLOYMENTFOLDERS += qmlFolder
 
 assetsFolder.source = assets
 DEPLOYMENTFOLDERS += assetsFolder
 
-# Add more folders to ship with the application here
+# RESOURCES += resources.qrc
 
-# RESOURCES += resources.qrc # uncomment for publishing
-
-# NOTE: for PUBLISHING, perform the following steps:
-# 1. comment the DEPLOYMENTFOLDERS += qmlFolder line above, to avoid shipping your qml files with the application (instead they get compiled to the app binary)
-# 2. uncomment the resources.qrc file inclusion and add any qml subfolders to the .qrc file; this compiles your qml files and js files to the app binary and protects your source code
-# 3. change the setMainQmlFile() call in main.cpp to the one starting with "qrc:/" - this loads the qml files from the resources
-# for more details see the "Deployment Guides" in the Felgo Documentation
-
-# during development, use the qmlFolder deployment because you then get shorter compilation times (the qml files do not need to be compiled to the binary but are just copied)
-# also, for quickest deployment on Desktop disable the "Shadow Build" option in Projects/Builds - you can then select "Run Without Deployment" from the Build menu in Qt Creator if you only changed QML files; this speeds up application start, because your app is not copied & re-compiled but just re-interpreted
-
-
-# The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp
 
 FELGO_PLUGINS += firebase
@@ -59,3 +39,6 @@ win32 {
 macx {
     ICON = macx/app_icon.icns
 }
+
+DISTFILES += \
+    qml/model/DataModel.qml
